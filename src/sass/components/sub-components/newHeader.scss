@@ -1,0 +1,29 @@
+@import '../../mixins/mainMixins.scss';
+@import '../../variables/mainVariables.scss';
+
+.header-section {
+    // border: 2px solid blue;
+    @include flexSettings(row, space-between, center);
+    padding: 0.1rem 0.6rem;
+
+    .logo-section {
+        @include logo(0.48rem, 8px, white);
+    }
+
+    .navbar-section {
+        @include flexSettings(row, space-between, center);
+        width: 80%;
+        padding: 0 22rem;
+        @include fontSettings(1.1rem, 500);
+    }
+
+    .search-bar-section {
+        width: 28%;
+
+        .search-bar {
+            @include searchBar(1rem, 8px, normal, #333, true);
+        }
+
+    }
+
+}

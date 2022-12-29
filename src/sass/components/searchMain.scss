@@ -1,0 +1,114 @@
+@import './sub-components/header.scss';
+
+.search-main {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+
+    .search-bar-section {
+        padding: 1rem 0.8rem;
+        display: flex;
+        flex-direction: column;
+        height: 42%;
+        justify-content: space-between;
+
+        .search-bar {
+            @include searchBar(1.8rem, 2rem, bold, #111, false, 80%, 0px 8px 8px 4px rgb(0 0 0 / 60%), true, flex);
+            align-self: center;
+            gap: 0rem;
+        }
+
+        .filter {
+            padding: 0.8rem 0.4rem;
+
+            .filter-section {
+                position: relative;
+                padding: 0rem 0.4rem;
+                display: flex;
+                gap: 0rem;
+                width: 100%;
+                justify-content: center;
+
+                &:before {
+                    content: "filter";
+                    position: absolute;
+                    background-color: #444;
+                    padding: 0.4rem;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    top: -20%;
+                    letter-spacing: 4px;
+                    z-index: 1000;
+                }
+
+                .filtering-content {
+                    position: relative;
+                    font-size: $normal-font-size;
+                    width: 100%;
+                    display: flex;
+                    // height: ;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 0rem;
+                    z-index: 100;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        border-right: 2px solid #333;
+                        height: 100px;
+                        width: 100%;
+                        bottom: 12%;
+                        z-index: -10;
+                    }
+
+                    &:last-child:after {
+                        border: none;
+                    }
+
+                    .filter-text-content {
+                        min-width: 24%;
+                    }
+
+                    .selector {
+                        display: inline-flex;
+                        width: 100%;
+                        height: fit-content;
+                        padding: 0em 1em 0.8em 1em;
+
+                        #filter-select {
+                            padding: 0.2em 0.8em;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: $normal-font-size;
+                            appearance: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            -ms-appearance: none;
+                            // width: 100%;
+
+                            &::after {
+                                content: 'a';
+                                position: absolute;
+                                width: 1rem;
+                                height: 1rem;
+                                background-color: red;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .filter-section {
+        border: 2px solid #333;
+    }
+}
+
+@include placeholderHide();

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.header-main {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.header-main .bg-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../netflix.jpg");
+  z-index: 0;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  -o-object-position: 1rem;
+     object-position: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.8;
+}
+.header-main .logo-section {
+  z-index: 10;
+}
+.header-main .logo-section .typo {
+  font-size: 0.48rem;
+  color: #FFF;
+  cursor: pointer;
+}
+.header-main .logo-section .typo #demo {
+  background: #C61C1C;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
+}
+.header-main .navbar-section {
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
+}
+.header-main .navbar-section .navbar-content {
+  margin-right: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */

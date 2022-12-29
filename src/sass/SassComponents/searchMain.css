@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.header-main {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.header-main .bg-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../netflix.jpg");
+  z-index: 0;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  -o-object-position: 1rem;
+     object-position: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.8;
+}
+.header-main .logo-section {
+  z-index: 10;
+}
+.header-main .logo-section .typo {
+  font-size: 0.48rem;
+  color: #FFF;
+  cursor: pointer;
+}
+.header-main .logo-section .typo #demo {
+  background: #C61C1C;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
+}
+.header-main .navbar-section {
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
+}
+.header-main .navbar-section .navbar-content {
+  margin-right: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-main {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+.search-main .search-bar-section {
+  padding: 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  height: 42%;
+  justify-content: space-between;
+}
+.search-main .search-bar-section .search-bar {
+  background-color: #111;
+  width: 80%;
+  font-size: 1.8rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  box-shadow: 0px 8px 8px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: flex;
+  align-self: center;
+  gap: 0rem;
+}
+.search-main .search-bar-section .search-bar::-webkit-input-placeholder {
+  text-align: center;
+}
+.search-main .search-bar-section .search-bar::-moz-placeholder {
+  text-align: center;
+}
+.search-main .search-bar-section .filter {
+  padding: 0.8rem 0.4rem;
+}
+.search-main .search-bar-section .filter .filter-section {
+  position: relative;
+  padding: 0rem 0.4rem;
+  display: flex;
+  gap: 0rem;
+  width: 100%;
+  justify-content: center;
+}
+.search-main .search-bar-section .filter .filter-section:before {
+  content: "filter";
+  position: absolute;
+  background-color: #444;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  top: -20%;
+  letter-spacing: 4px;
+  z-index: 1000;
+}
+.search-main .search-bar-section .filter .filter-section .filtering-content {
+  position: relative;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0rem;
+  z-index: 100;
+}
+.search-main .search-bar-section .filter .filter-section .filtering-content:after {
+  content: "";
+  position: absolute;
+  border-right: 2px solid #333;
+  height: 100px;
+  width: 100%;
+  bottom: 12%;
+  z-index: -10;
+}
+.search-main .search-bar-section .filter .filter-section .filtering-content:last-child:after {
+  border: none;
+}
+.search-main .search-bar-section .filter .filter-section .filtering-content .filter-text-content {
+  min-width: 24%;
+}
+.search-main .search-bar-section .filter .filter-section .filtering-content .selector {
+  display: inline-flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0em 1em 0.8em 1em;
+}
+.search-main .search-bar-section .filter .filter-section .filtering-content .selector #filter-select {
+  padding: 0.2em 0.8em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+.search-main .search-bar-section .filter .filter-section .filtering-content .selector #filter-select::after {
+  content: "a";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+.search-main .filter-section {
+  border: 2px solid #333;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}/*# sourceMappingURL=searchMain.css.map */

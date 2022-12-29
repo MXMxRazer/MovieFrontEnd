@@ -1,0 +1,22 @@
+@import '../../variables/mainVariables.scss';
+@import '../../mixins/mainMixins.scss';
+
+.super-rating-button {
+    margin-left: 0.6em;
+    // border: 1px solid red;
+    display: inline;
+
+    .rating-button {
+        display: flex;
+        align-items: center;
+
+        .rating-star {
+            font-size: 1rem;
+            width: 1.2em;
+            height: 1.2em;
+            color: yellow;
+        }
+
+    }
+
+}

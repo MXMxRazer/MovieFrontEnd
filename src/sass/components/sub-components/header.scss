@@ -1,0 +1,45 @@
+@import '../../mixins/mainMixins.scss';
+@import '../../variables/mainVariables.scss';
+
+.header-main {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+
+    .bg-img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), $bg-img-netflix;
+        z-index: 0;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        object-position: 1rem;
+        object-fit: contain;
+        opacity: 0.8;
+    }
+
+    .logo-section {
+        @include logo(0.48rem, 8px, #FFF);
+        z-index: 10;
+    }
+
+    .navbar-section {
+        display: flex;
+        flex-direction: row;
+        z-index: 10;
+
+        .navbar-content {
+            margin-right: 1.8rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}

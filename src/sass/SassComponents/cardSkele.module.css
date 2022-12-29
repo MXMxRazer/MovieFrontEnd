@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.cardSkele {
+  position: relative;
+  width: 20%;
+  height: 28em;
+  cursor: pointer;
+  background-size: 100% 28em;
+  border-radius: 8px;
+  padding: 0 !important;
+  margin-right: 0 !important;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
+  -webkit-animation: motion 1.2s linear 0s infinite alternate;
+          animation: motion 1.2s linear 0s infinite alternate;
+}
+@-webkit-keyframes motion {
+  from {
+    background-color: #242424;
+  }
+  to {
+    background-color: #111;
+  }
+}
+@keyframes motion {
+  from {
+    background-color: #242424;
+  }
+  to {
+    background-color: #111;
+  }
+}/*# sourceMappingURL=cardSkele.module.css.map */

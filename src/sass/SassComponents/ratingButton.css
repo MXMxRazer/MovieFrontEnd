@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.super-rating-button {
+  margin-left: 0.6em;
+  display: inline;
+}
+.super-rating-button .rating-button {
+  display: flex;
+  align-items: center;
+}
+.super-rating-button .rating-button .rating-star {
+  font-size: 1rem;
+  width: 1.2em;
+  height: 1.2em;
+  color: yellow;
+}/*# sourceMappingURL=ratingButton.css.map */

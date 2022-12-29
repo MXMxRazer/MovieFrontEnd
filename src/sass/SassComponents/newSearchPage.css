@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.header-main {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.header-main .bg-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../netflix.jpg");
+  z-index: 0;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  -o-object-position: 1rem;
+     object-position: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.8;
+}
+.header-main .logo-section {
+  z-index: 10;
+}
+.header-main .logo-section .typo {
+  font-size: 0.48rem;
+  color: #FFF;
+  cursor: pointer;
+}
+.header-main .logo-section .typo #demo {
+  background: #C61C1C;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
+}
+.header-main .navbar-section {
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
+}
+.header-main .navbar-section .navbar-content {
+  margin-right: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  width: 20%;
+  height: 28em;
+  cursor: pointer;
+  background-size: 100% 28em;
+  border-radius: 8px;
+  padding: 0 !important;
+  margin-right: 0 !important;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
+}
+.card:hover {
+  transform: scale(1.08);
+  z-index: 1000;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
+}
+.card:hover:before {
+  background-color: rgba(0, 0, 0, 0.28);
+  box-shadow: none;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  height: 28em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.42);
+  border-radius: 8px;
+  box-shadow: 0px 0px 36px 12px rgba(0, 0, 0, 0.8) inset;
+}
+.card .card-contents {
+  position: relative;
+  width: 100%;
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0;
+}
+.card .card-contents .card-content-details {
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #aaa;
+  text-align: start;
+  padding: 0.4rem 1rem;
+}
+.card .card-contents .card-content-details .heading {
+  font-size: 1.8rem;
+  display: block;
+  color: #eee !important;
+  margin-bottom: 0.6rem;
+  text-decoration: underline;
+  line-height: 2rem;
+}
+.card .card-contents .card-content-details .details {
+  font-size: small;
+}
+.card .card-contents .card-content-details .details .detail {
+  margin: 0;
+}
+.card .card-contents .card-content-details .details .detail-title {
+  font-weight: bolder;
+  font-size: 0.88rem;
+}
+.card .card-contents .card-content-details .details .ratings {
+  display: flex;
+  margin-top: 0.2rem;
+  gap: 3rem;
+}
+
+.lighten-up {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.search-section-super {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #222;
+  align-items: center;
+}
+.search-section-super .search-section {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #222;
+}
+.search-section-super .search-section .main-search-section {
+  padding: 0.4rem 0.6rem;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+.search-section-super .search-section .main-search-section .search-title {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 1.2px;
+  font-family: default;
+  text-decoration: none;
+}
+.search-section-super .search-section .main-search-section .showcase-section {
+  margin-top: 2rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=newSearchPage.css.map */

@@ -1,0 +1,59 @@
+@import '../../mixins/mainMixins.scss';
+
+.number-slider-super {
+    // border: 2px solid whitesmoke;
+    margin-top: 1.4rem;
+
+    .number-slides {
+
+        @include fontSettings(1rem, normal, whitesmoke);
+
+        @include flexSettings(row, center, center);
+
+        .after,
+        .before {
+            position: relative;
+            cursor: pointer;
+            color: rgb(212, 81, 81);
+            font-size: 1.4rem;
+            align-self: center;
+            background-color: transparent;
+            padding: 0.4rem;
+            outline: none;
+            border: none;
+
+            &:hover {
+                outline: none;
+                border: none;
+            }
+
+            &:first-child {
+                margin-right: 0.8rem;
+            }
+
+            &:last-child {
+                margin-left: 0.6rem;
+            }
+        }
+
+        .number-counter {
+            background-color: rgb(212, 81, 81);
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            padding: 0.2rem;
+            margin-right: 1.8rem;
+            cursor: pointer;
+
+            &:active,
+            &:focus {
+                border: 2px solid white;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0;
+                position: relative;
+            }
+        }
+    }
+}

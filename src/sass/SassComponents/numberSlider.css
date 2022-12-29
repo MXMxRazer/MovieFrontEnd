@@ -1,0 +1,56 @@
+.number-slider-super {
+  margin-top: 1.4rem;
+}
+.number-slider-super .number-slides {
+  font-size: 1rem;
+  font-weight: normal;
+  color: whitesmoke;
+  letter-spacing: none;
+  font-family: default;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.number-slider-super .number-slides .after,
+.number-slider-super .number-slides .before {
+  position: relative;
+  cursor: pointer;
+  color: rgb(212, 81, 81);
+  font-size: 1.4rem;
+  align-self: center;
+  background-color: transparent;
+  padding: 0.4rem;
+  outline: none;
+  border: none;
+}
+.number-slider-super .number-slides .after:hover,
+.number-slider-super .number-slides .before:hover {
+  outline: none;
+  border: none;
+}
+.number-slider-super .number-slides .after:first-child,
+.number-slider-super .number-slides .before:first-child {
+  margin-right: 0.8rem;
+}
+.number-slider-super .number-slides .after:last-child,
+.number-slider-super .number-slides .before:last-child {
+  margin-left: 0.6rem;
+}
+.number-slider-super .number-slides .number-counter {
+  background-color: rgb(212, 81, 81);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+  margin-right: 1.8rem;
+  cursor: pointer;
+}
+.number-slider-super .number-slides .number-counter:active, .number-slider-super .number-slides .number-counter:focus {
+  border: 2px solid white;
+}
+.number-slider-super .number-slides .number-counter:nth-child(4) {
+  margin-right: 0;
+  position: relative;
+}/*# sourceMappingURL=numberSlider.css.map */

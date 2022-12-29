@@ -1,0 +1,42 @@
+@import '../components/sub-components/header.scss';
+@import '../mixins/mainMixins.scss';
+@import '../components/sub-components/card.scss';
+
+.search-section-super {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: $formal-bg-clr;
+    align-items: center;
+
+    .search-section {
+        @include maximizeWidth();
+        background-color: $formal-bg-clr;
+
+        .main-search-section {
+            // border: 1px solid white;
+            padding: 0.4rem 0.6rem;
+            width: 100%;
+            margin-top: 2rem;
+            position: relative;
+
+            .search-title {
+                text-align: left;
+                @include fontSettings(1.8rem, bolder, white, 1.2px);
+            }
+
+            .showcase-section {
+                margin-top: 2rem;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                gap: 2em;
+                flex-grow: 1;
+                flex-wrap: wrap;
+
+            }
+        }
+
+    }
+}

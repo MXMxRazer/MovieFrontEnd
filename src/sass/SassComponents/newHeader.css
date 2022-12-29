@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 0.6rem;
+}
+.header-section .logo-section .typo {
+  font-size: 0.48rem;
+  color: white;
+  cursor: pointer;
+}
+.header-section .logo-section .typo #demo {
+  background: #C61C1C;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
+}
+.header-section .navbar-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 0 22rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: none;
+  font-family: default;
+  text-decoration: none;
+}
+.header-section .search-bar-section {
+  width: 28%;
+}
+.header-section .search-bar-section .search-bar {
+  background-color: #333;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-weight: normal;
+  box-shadow: none;
+  text-align: center;
+  display: block;
+  padding: 0.6rem 1.4rem !important;
+}/*# sourceMappingURL=newHeader.css.map */

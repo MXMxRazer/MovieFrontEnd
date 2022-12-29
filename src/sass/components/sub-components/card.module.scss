@@ -1,0 +1,86 @@
+@import '../../variables/mainVariables.scss';
+@import '../../mixins/mainMixins.scss';
+
+.card {
+
+    @include cardLayout();
+
+    &:hover {
+        transform: scale(1.08);
+        z-index: 1000;
+        box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
+
+        &:before {
+            background-color: rgba(0, 0, 0, 0.28);
+            box-shadow: none;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: $card-height;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.42);
+        border-radius: $border-radius;
+        box-shadow: 0px 0px 36px 12px rgb(0 0 0 / 80%) inset;
+    }
+
+    .card-contents {
+        position: relative;
+        width: 100%;
+        height: $card-height;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 0;
+
+        .card-content-details {
+            border-radius: $border-radius;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #aaa;
+            text-align: start;
+            padding: 0.4rem 1rem;
+
+            .heading {
+                font-size: 1.8rem;
+                display: block;
+                color: #eee !important;
+                margin-bottom: 0.6rem;
+                text-decoration: underline;
+                line-height: 2rem;
+            }
+
+            .details {
+                font-size: small;
+
+                .detail {
+                    margin: 0;
+
+                    &-title {
+                        font-weight: bolder;
+                        font-size: 0.88rem;
+                    }
+                }
+
+                .ratings {
+                    display: flex;
+                    margin-top: 0.2rem;
+                    gap: 3rem;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.lighten-up {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}

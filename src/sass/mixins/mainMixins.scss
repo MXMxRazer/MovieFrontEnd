@@ -1,0 +1,139 @@
+@mixin logo($font-size, $bdr-radius, $text-clr) {
+    .typo {
+        font-size: $font-size;
+        color: $text-clr;
+        cursor: pointer;
+
+        #demo {
+            background: $bg-primary-clr;
+            border-radius: $bdr-radius;
+            padding: 0.4rem;
+            margin-right: 0.4rem;
+        }
+    }
+}
+
+@mixin searchBar($font-size, $bdr-radius, $bolding, $bg-clr: #222,
+    $statPad: false, $width: 100%, $bdr-clr: none, $placeholder: none, $dp: block) {
+    background-color: $bg-clr;
+    width: $width;
+    font-size: $font-size;
+    padding: 0.8rem 1.4rem;
+    border-radius: $bdr-radius;
+    border: none;
+    outline: none;
+    font-weight: $bolding;
+    box-shadow: $bdr-clr;
+    text-align: center;
+    display: $dp;
+
+    @if ($statPad) {
+        padding: 0.6rem 1.4rem !important;
+    }
+
+    @if ($placeholder==true) {
+        &::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        &::-moz-placeholder {
+            text-align: center;
+        }
+    }
+}
+
+@mixin button($width, $font-size, $bg-clr, $bolding, $padding, $bdr-radius) {
+    width: $width;
+    font-size: $font-size;
+    background-color: $bg-clr;
+    font-weight: $bolding;
+    padding: $padding;
+    border-radius: $bdr-radius;
+    margin-top: 1.4rem;
+}
+
+@mixin flexSettings($dirn, $just-content, $align-items) {
+    display: flex;
+    flex-direction: $dirn;
+    justify-content: $just-content;
+    align-items: $align-items;
+}
+
+@mixin placeholderHide() {
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    input:focus:-moz-placeholder {
+        color: transparent;
+    }
+
+    input:focus::-moz-placeholder {
+        color: transparent;
+    }
+
+    input:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+}
+
+@mixin fontSettings($font-size: 1rem, $font-weight: 400, $color: white,
+    $letter-spacing: none, $text-decoration: none, $font-family: default) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    letter-spacing: $letter-spacing;
+    font-family: $font-family;
+    text-decoration: $text-decoration;
+}
+
+@mixin maximizeWidth() {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin displayCard($card-height, $border-radius, $position: relative) {
+    $card-height: $card-height;
+    $border-radius: $border-radius;
+
+    position: $position;
+    width: 20%;
+    height: $card-height;
+    background-size: 100% $card-height !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $border-radius;
+    padding: 0 !important;
+    margin-right: 0 !important;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+@mixin cardLayout() {
+    position: relative;
+    width: $card-width;
+    height: $card-height;
+    cursor: pointer;
+    background-size: 100% calc(20em + 8em);
+    border-radius: $border-radius;
+    padding: 0 !important;
+    margin-right: 0 !important;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+@mixin skeletonAnimation() {
+
+    animation: motion 1.2s linear 0s infinite alternate;
+
+    @keyframes motion {
+        from {
+            background-color: #242424;
+        }
+
+        to {
+            background-color: #111;
+        }
+    }
+}

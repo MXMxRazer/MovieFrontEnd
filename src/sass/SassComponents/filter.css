@@ -1,0 +1,75 @@
+.filter-container {
+  max-width: 100%;
+  min-height: auto;
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 0.8em;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+  cursor: pointer;
+  margin: 0 !important;
+}
+.filter-container .selected {
+  position: relative;
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #bbb;
+}
+.filter-container .cross {
+  color: #333;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.filter-container .cross:hover {
+  color: white;
+}
+.filter-container .divider {
+  align-self: stretch;
+  border-left: 1px solid #333;
+}
+.filter-container .drop-down {
+  transform: rotate(90deg);
+  color: #888;
+  cursor: pointer;
+}
+.filter-container .listOfItems {
+  visibility: hidden;
+  position: absolute;
+}
+.filter-container .showList {
+  display: block;
+  background: #111;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  margin-top: 0.5em;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1em;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.filter-container .showList #items {
+  cursor: pointer;
+  border: 2px solid #333;
+  padding: 0.4em;
+  border-radius: 8px;
+  margin-bottom: 0.4em;
+}
+.filter-container .showList #items:hover {
+  background-color: #aaa;
+}
+.filter-container .showList #items:active {
+  background-color: #aaa;
+}
+.filter-container .showList #items.selected {
+  background-color: #333;
+}
+.filter-container .showList .highLight {
+  background-color: rgb(13, 95, 24);
+}/*# sourceMappingURL=filter.css.map */
